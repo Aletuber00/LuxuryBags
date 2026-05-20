@@ -1,0 +1,47 @@
+/* ===== ANIMAZIONI CSS (senza JavaScript) ===== */
+
+/* Animazione di apparizione dal basso */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animazione di apparizione semplice */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Classe per far apparire gli elementi con ritardo */
+.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Ritardi diversi per creare un effetto "a cascata" */
+.fade-in.delay-1 { animation-delay: 0.1s; opacity: 0; }
+.fade-in.delay-2 { animation-delay: 0.2s; opacity: 0; }
+.fade-in.delay-3 { animation-delay: 0.3s; opacity: 0; }
+.fade-in.delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+/* Animazione per la hero section */
+.hero-content {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero-image {
+    animation: fadeIn 1.2s ease 0.3s forwards;
+    opacity: 0;
+}
+
+/* Animazione per le card quando passi sopra col mouse */
+.category-card,
+.product-card,
+.value-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

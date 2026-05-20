@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - MAISON ÉLITE</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MAISON <span>ÉLITE</span></a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><span></span><span></span><span></span></label>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="collezione.html">Collezione</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="contatti.html" class="active">Contatti</a></li>
+                <li><a href="registrazione.html" class="btn-register">Registrati</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Contatta<span style="color: var(--primary);">ci</span></h1>
+        <p>Hai domande o vuoi saperne di più? Siamo qui per aiutarti.</p>
+    </section>
+
+    <div class="contact-wrapper">
+        <div class="contact-info fade-in">
+            <h2>Parliamo</h2>
+            <p>Non esitare a scriverci per qualsiasi domanda.</p>
+            <div class="contact-detail">
+                <div class="contact-detail-icon">✉</div>
+                <div class="contact-detail-text">
+                    <h4>Email</h4>
+                    <p>info@maisonelite.it</p>
+                </div>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-detail-icon">✆</div>
+                <div class="contact-detail-text">
+                    <h4>Telefono</h4>
+                    <p>+39 055 123 4567</p>
+                </div>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-detail-icon">⌂</div>
+                <div class="contact-detail-text">
+                    <h4>Indirizzo</h4>
+                    <p>Via della Moda 42, 50100 Firenze</p>
+                </div>
+            </div>
+            <div class="contact-detail">
+                <div class="contact-detail-icon">◷</div>
+                <div class="contact-detail-text">
+                    <h4>Orari</h4>
+                    <p>Lun - Ven: 9:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper fade-in delay-2">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome" placeholder="Il tuo nome..." required>
+                </div>
+                <div class="form-group">
+                    <label for="emailContact">Email</label>
+                    <input type="email" id="emailContact" placeholder="La tua email..." required>
+                </div>
+                <div class="form-group">
+                    <label for="oggetto">Oggetto</label>
+                    <select id="oggetto">
+                        <option value="">Seleziona un argomento</option>
+                        <option value="info">Informazioni prodotto</option>
+                        <option value="ordine">Stato ordine</option>
+                        <option value="reso">Resi e cambi</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="messaggio">Messaggio</label>
+                    <textarea id="messaggio" placeholder="Scrivi il tuo messaggio..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit">Invia Messaggio</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>MAISON <span>ÉLITE</span></h4>
+                <p>Borse artigianali di lusso, made in Italy.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Link Utili</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="collezione.html">Collezione</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legale</h4>
+                <ul>
+                    <li><a href="#">Termini e Condizioni</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Seguici</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Pinterest</a>
+                    <a href="#" class="social-icon">TikTok</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MAISON ÉLITE - Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+</body>
+</html>

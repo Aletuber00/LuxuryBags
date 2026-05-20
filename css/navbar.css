@@ -1,0 +1,126 @@
+/* ===== NAVBAR ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(251, 247, 240, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    position: relative;
+    transition: var(--transition);
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* Bottone Registrati */
+.btn-register {
+    background: var(--primary) !important;
+    color: var(--white) !important;
+    padding: 10px 24px !important;
+    border-radius: 25px;
+    font-weight: 500 !important;
+    transition: var(--transition);
+}
+
+.btn-register:hover {
+    background: var(--primary-light) !important;
+    transform: translateY(-2px);
+}
+
+.btn-register::after {
+    display: none !important;
+}
+
+/* ===== HAMBURGER (solo CSS, senza JavaScript) ===== */
+/* Usiamo un checkbox nascosto: quando è "checked",
+   il menu si apre. Nessun JavaScript necessario! */
+
+.menu-toggle {
+    display: none; /* checkbox nascosto */
+}
+
+.hamburger {
+    display: none; /* visibile solo su mobile */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 2px;
+    background: var(--text);
+    transition: var(--transition);
+}
+
+/* Quando il checkbox è selezionato, le linee si trasformano in X */
+.menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Quando il checkbox è selezionato, il menu si apre */
+.menu-toggle:checked ~ .nav-links {
+    right: 0;
+}
