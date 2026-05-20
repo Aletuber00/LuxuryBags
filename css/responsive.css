@@ -4,6 +4,17 @@
     .hero-title { font-size: 3rem; }
     .featured { gap: 40px; }
     .section-title { font-size: 2.2rem; }
+
+    .collection-grid {
+        padding: 0 20px 80px;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .product-card {
+        min-width: auto;
+        max-width: 100%;
+    }
 }
 
 /* ===== MOBILE (max 768px) ===== */
